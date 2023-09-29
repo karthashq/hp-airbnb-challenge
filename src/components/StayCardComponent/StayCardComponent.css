@@ -1,0 +1,35 @@
+
+
+
+/* adopt sass variables to avoid duplication */
+
+.stay-card{
+    transition: transform .5s;
+}
+
+.stay-card:hover{
+    -ms-transform: scale(1.03); /* IE 9 */
+    -webkit-transform: scale(1.03); /* Safari 3-8 */
+    transform: scale(1.03);
+    /* box-shadow: ; */
+}
+
+
+.info-box{
+    min-height: 109px;
+}
+.purple-box{
+    border:0.5px solid #BBA4FB;
+    background-color: #BBA4FB30;
+    text-align: center;
+    border-radius: 5px;
+    font-size:0.8rem;
+}
+
+.blue-box{
+   border: 1px solid #0D7AB5;
+   background-color: #64C0F330;
+   border-radius: 5px;
+   text-align: center;
+   font-size:0.8rem;
+}

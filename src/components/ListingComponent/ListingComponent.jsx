@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import StayCardComponent from "../StayCardComponent/StayCardComponent";
-import PaginationComponent from "../PagninationComponent/PagninationComponent";
+import PaginationComponent from "../PaginationComponent/PaginationComponent";
 import { getRandomBool, getRandomDateRange, getFormattedNumber } from "../../utils/utils";
 
 const defaultListingAPI =

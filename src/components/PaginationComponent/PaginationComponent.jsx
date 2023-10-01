@@ -1,9 +1,16 @@
 
+import PropTypes from 'prop-types';
+
+
 import {useCallback} from 'react';
 import {getFormattedNumber} from "../../utils/utils";
 
-import "./PagninationComponent.css";
-export default function Pagination({
+import "./PaginationComponent.css";
+
+/*
+* A pagination component that can be used dynamically 
+*/
+export default function PaginationComponent({
     onPageChange,
     totalCount,
     currentPage,
@@ -39,3 +46,11 @@ export default function Pagination({
   );
 };
 
+
+PaginationComponent.propTypes = {
+  onPageChange : PropTypes.func,  // function to call when page is changed
+  totalCount : PropTypes.number, // total number of items in the list
+  currentPage: PropTypes.number, // Current Page number
+  className: PropTypes.string, // addition classes to be set 
+  offSet: PropTypes.number // number of records to show in one page
+}

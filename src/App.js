@@ -30,7 +30,7 @@ function App() {
       </div>
 
       {/* insert the profile menu layover here using React.createPortal so that it lies in the outer layer */}
-      <div class="layover"></div>
+      <div className="layover"></div>
     </div>
   );
 }

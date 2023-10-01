@@ -1,12 +1,15 @@
+import PropTypes from 'prop-types';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeartCirclePlus, faHeartCircleMinus } from "@fortawesome/free-solid-svg-icons";
 import "./StayCardComponent.css";
+import CardComponent from "../CardComponent/CardComponent";
 
 
 function StayCardComponent({ stayInfo = {}}) {
   return (
-    <>
-      <div className="stay-card p-3 container-fluid box-shadow">
+    <CardComponent>
+      <div className="stay-card container-fluid">
         <div className="row info-box">
           <div className="d-flex justify-content-between">
             <span className="fw-semibold">{stayInfo.location}</span>
@@ -30,8 +33,12 @@ function StayCardComponent({ stayInfo = {}}) {
           <div className="col-4 text-end text-truncate">${stayInfo.price}</div>
         </div>
       </div>
-    </>
+    </CardComponent>
   );
 }
 
 export default StayCardComponent;
+
+StayCardComponent.propTypes = {
+  stayInfo: PropTypes.object // all the info abt the stay
+}

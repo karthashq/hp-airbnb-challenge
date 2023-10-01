@@ -10,9 +10,9 @@ export default function ProfileComponent() {
 
   return (
     <div className="profile-pop-over">
-      <div className="swatch" onClick={() => toggle((prev) => !prev)}>
-        <div className="circle">JS</div>
-      </div>
+      <button className="pop-over-button" onClick={() => toggle((prev) => !prev)}>
+        JS
+      </button>
       {isOpen && (
         <div className="popover" ref={popover}>
           <CardComponent>
